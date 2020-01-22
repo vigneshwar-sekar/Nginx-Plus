@@ -1,0 +1,8 @@
+---
+- hosts: nginxplus
+  become: yes
+  become_method: sudo
+  roles:
+    - { role: nginxplus }
+
+

@@ -1,0 +1,7 @@
+[nginxplus]
+yyz-lb01 ansible_ssh_host=10.0.10.5 ansible_ssh_user=deployuser
+yyz-lb02 ansible_ssh_host=10.0.10.6 ansible_ssh_user=deployuser
+#test-nginx ansible_host=192.168.146.49 ansible_user=deployuser
+
+[yyz:children]
+nginxplus
